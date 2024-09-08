@@ -1,11 +1,39 @@
 <html>
 
 <head>
-    <title>Inferise</title>
+	<title>Inferise</title>
+	<script type="module" src="index.js"></script>
+	<style>
+		@import url('https://cdn.jsdelivr.net/npm/gotham-fonts@1.0.3/css/gotham-rounded.min.css');
+
+		body {
+			background-color: black;
+		}
+
+		table {
+			padding: 40pt;
+			line-height: 60pt;
+		}
+
+		a {
+			font-family: 'Gotham Rounded Book', sans-serif;
+			font-size: 39;
+			color: white;
+			text-decoration: none;
+		}
+	</style>
 </head>
 
 <body>
-    <h3>...</h3>
+	<div id="model">
+		<table>
+			<tr v-for="item in app.data.items">
+				<td>
+					<a :href="`${item.url}`">{{item.label}}</a>
+				</td>
+			</tr>
+		</table>
+	</div>
 </body>
 
 </html>
