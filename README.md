@@ -1,3 +1,3 @@
 # Inferise
 
-Public Web
+Public Resources
